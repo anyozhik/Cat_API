@@ -1,5 +1,5 @@
 # Test suites for Cat API
-The repository contains a pet project with test suites for a public API [CatAPI](https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t). This API inculdes a lot of cat images, fun facts about cats and their breeds.
+The repository contains a pet project with test suites for a public API [Cat_API](https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t). This API inculdes a lot of cat images, fun facts about cats and their breeds.
 Tests coveres three main modules:
 -	a test for an uploading cat image (uploading, checking, deleting);
 -	a test for adding pictures to favourites (adding, checking, removing from favourites);
