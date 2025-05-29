@@ -6,5 +6,5 @@ Tests coveres three main modules:
 - a test for voting for the pictures (voting, checking, deleting votes).
 This project is created on the Python language using the Requests library.
 
-*Thank you for your time and consideration. Have a wonderful day  :smiley_cat: *
+*Thank you for your time and consideration. Have a wonderful day*  :smiley_cat:
 
