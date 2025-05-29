@@ -1,0 +1,45 @@
+Method get for a search of specific images
+https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&order=RANDOM&page=0&limit=2
+[{'breeds': [], 'id': '1vr', 'url': 'https://cdn2.thecatapi.com/images/1vr.jpg', 'width': 500, 'height': 334}, {'breeds': [], 'id': '6st', 'url': 'https://cdn2.thecatapi.com/images/6st.jpg', 'width': 1024, 'height': 684}]
+200
+Successfully! Status code is 200
+Method for voting for the picture
+https://api.thecatapi.com/v1/votes
+{'message': 'SUCCESS', 'id': 1283919, 'image_id': '1vr', 'sub_id': 'Anka-user', 'value': 1}
+201
+Successfully! Status code is 201
+['message', 'id', 'image_id', 'sub_id', 'value']
+All fields are presented
+https://api.thecatapi.com/v1/votes
+{'message': 'SUCCESS', 'id': 1283920, 'image_id': '6st', 'sub_id': 'Anka-user', 'value': 1}
+201
+Successfully! Status code is 201
+['message', 'id', 'image_id', 'sub_id', 'value']
+All fields are presented
+Method get for checking votes
+https://api.thecatapi.com/v1/votes
+[{'id': 1283919, 'image_id': '1vr', 'sub_id': 'Anka-user', 'created_at': '2025-05-29T16:40:36.000Z', 'value': 1, 'country_code': None, 'image': {'id': '1vr', 'url': 'https://cdn2.thecatapi.com/images/1vr.jpg'}}, {'id': 1283920, 'image_id': '6st', 'sub_id': 'Anka-user', 'created_at': '2025-05-29T16:40:37.000Z', 'value': 1, 'country_code': None, 'image': {'id': '6st', 'url': 'https://cdn2.thecatapi.com/images/6st.jpg'}}]
+200
+Successfully! Status code is 200
+Length of response is correct!
+Method delete for the first vote
+https://api.thecatapi.com/v1/votes/1283919
+200
+Successfully! Status code is 200
+Method get for checking votes after the first delete
+https://api.thecatapi.com/v1/votes
+[{'id': 1283920, 'image_id': '6st', 'sub_id': 'Anka-user', 'created_at': '2025-05-29T16:40:37.000Z', 'value': 1, 'country_code': None, 'image': {'id': '6st', 'url': 'https://cdn2.thecatapi.com/images/6st.jpg'}}]
+200
+Successfully! Status code is 200
+Length of response is correct!
+Method delete for the second vote
+https://api.thecatapi.com/v1/votes/1283920
+200
+Successfully! Status code is 200
+Method get for checking votes after the second delete
+https://api.thecatapi.com/v1/votes
+[]
+200
+Successfully! Status code is 200
+Length of response is correct!
+Testing of voting for the pictures and removing votes has finished successfully.

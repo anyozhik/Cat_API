@@ -1,0 +1,260 @@
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_upload_new_photo (call)
+Time: 2025-05-29 23:40:23.886621
+Request method: POST
+Request URL: https://api.thecatapi.com/v1/images/upload
+
+Response code: 201
+Response code: {"id":"_tpFYEfTs","url":"https://cdn2.thecatapi.com/images/_tpFYEfTs.jpg","width":1040,"height":780,"original_filename":"IMG_1.jpeg","pending":0,"approved":1}
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:25 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '158', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'X-Response-Time': '3495ms', 'X-Cloud-Trace-Context': 'c07287705801eca740b17bece33f8ae6', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pgabFQJM05Xbvv24%2BfcHSoRxCZOG1l3BtnQMKEveCABV1QtCiYmzfJ7mU6TQCywtagAoInomzaVHGBhHERU2joIxiRS0ylmj8nyPUnkPGm6N"}]}', 'CF-RAY': '94776edf9bd7f9da-WAW', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_upload_new_photo (call)
+Time: 2025-05-29 23:40:28.412744
+Request method: GET
+Request URL: https://api.thecatapi.com/v1/images/_tpFYEfTs
+
+Response code: 200
+Response code: {"id":"_tpFYEfTs","url":"https://cdn2.thecatapi.com/images/_tpFYEfTs.jpg","width":1040,"height":780,"sub_id":null}
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'X-Response-Time': '127ms', 'X-Cloud-Trace-Context': 'd88832adce4b04b0b8c536b67b357446', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=OJYm9yb%2FmSDlRXFRYKipBB%2Fupjf1aocn%2Fb0QR%2FzUg1itMvfrAOVYo80e09eC6CXDyJ3qyas%2BoZKvaaP01j%2FGYrDWPzQtyCjvIgLj263L0w%3D%3D"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776efb0ae93bd2-WAW', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_upload_new_photo (call)
+Time: 2025-05-29 23:40:29.025018
+Request method: DELETE
+Request URL: https://api.thecatapi.com/v1/images/_tpFYEfTs
+
+Response code: 204
+Response code: 
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:26 GMT', 'Content-Type': 'text/html', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'X-Response-Time': '63ms', 'X-Cloud-Trace-Context': 'ca3f5a2037086c437ffd73bc6d962a28', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MFjai0fcqNGwLbuj2OGS9eK%2BW5en%2BdP6GYxw97Ae%2B%2FznfxCcDtWL0Y%2BvsPM%2FXgTRf1D0UzK3%2F3jB8zsRpJ0fbM3AiQoNNRP3%2FYf%2BqWrd3w%3D%3D"}]}', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'CF-RAY': '94776efecbdcbf97-WAW', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_upload_new_photo (call)
+Time: 2025-05-29 23:40:29.551965
+Request method: GET
+Request URL: https://api.thecatapi.com/v1/images/_tpFYEfTs
+
+Response code: 400
+Response code: Couldn't find an image matching the passed 'id' of _tpFYEfTs
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:28 GMT', 'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '60', 'Connection': 'keep-alive', 'X-Cloud-Trace-Context': '7c6d9577f3464ac0d902c922f8dc60e4;o=1', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=w6YkCHl2jWA1eZAAiCz6u7scQ3aZCSu1Qp4MaWULNkQi0heEmhxgiHOnnxi6qZeErI%2BZI35U9BzWpLZdryU%2FV1RjUxC9qXB0HNkr4C1ykz55"}]}', 'CF-RAY': '94776f08cb8eafa0-AMS', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_add_to_favourites (call)
+Time: 2025-05-29 23:40:31.156729
+Request method: GET
+Request URL: https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&order=RANDOM&page=0&limit=2
+
+Response code: 200
+Response code: [{"breeds":[],"categories":[{"id":14,"name":"sinks"}],"id":"8os","url":"https://cdn2.thecatapi.com/images/8os.jpg","width":2592,"height":1552},{"breeds":[],"id":"MTU3NTY3Nw","url":"https://cdn2.thecatapi.com/images/MTU3NTY3Nw.jpg","width":580,"height":773}]
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:30 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'Expires': 'Tue, 03 Jul 2001 06:00:00 GMT', 'Last-Modified': 'Thu May 29 2025 16:40:30 GMT+0000 (Coordinated Universal Time)', 'Cache-Control': 'post-check=0, pre-check=0', 'Authenticated': 'true', 'X-Response-Time': '362ms', 'X-Cloud-Trace-Context': '846dcf8a483e5d163b91cb8233308675', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WYEej%2FfDKWQCk9NtwDBiCKvpEKYF0PrVQVGCoAmswnw2gFYMrotV7TzrIPUmzDdOxphHPsd1I1lS8EQpncVOm0zopM0771BzqhtplewqTf1X"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f12ea40a657-AMS', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_add_to_favourites (call)
+Time: 2025-05-29 23:40:33.085599
+Request method: POST
+Request URL: https://api.thecatapi.com/v1/favourites
+
+Response code: 200
+Response code: {"message":"SUCCESS","id":232534431}
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:31 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'X-Response-Time': '128ms', 'X-Cloud-Trace-Context': 'bd2e8954e370b03ee0f9b30d4dff0466', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=07xyvAZu9yJCgtCltin7AT47nxNPfexryihgc98bbomDGAB6ZKmr%2FROeu5xAj1q7e02r4qauHwfD4ybr3D%2FW3FuoKCpWY4sv5Cr0ZJYuo%2BXp"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f18889ed5a7-AMS', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_add_to_favourites (call)
+Time: 2025-05-29 23:40:33.739124
+Request method: POST
+Request URL: https://api.thecatapi.com/v1/favourites
+
+Response code: 200
+Response code: {"message":"SUCCESS","id":232534432}
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:31 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'X-Response-Time': '91ms', 'X-Cloud-Trace-Context': 'e6dc5c166ebdff6cb1d484a7a3e9239e', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=EBYvhoH9%2FJOJ%2BKbTe8knKxE2NbzapN4ucwWil08O7p%2BFpS%2B6677BWY3f8sOWEetN4Z4CrEbppwH%2F9R%2FZpiIgdz8m4vcuxbifllM%2FA%2F4ZZyP1"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f1c4b110b98-WAW', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_add_to_favourites (call)
+Time: 2025-05-29 23:40:34.345602
+Request method: GET
+Request URL: https://api.thecatapi.com/v1/favourites
+
+Response code: 200
+Response code: [{"id":232534431,"user_id":"7lylsy","image_id":"8os","sub_id":"Anka-user","created_at":"2025-05-29T16:40:30.000Z","image":{"id":"8os","url":"https://cdn2.thecatapi.com/images/8os.jpg"}},{"id":232534432,"user_id":"7lylsy","image_id":"MTU3NTY3Nw","sub_id":"Anka-user","created_at":"2025-05-29T16:40:31.000Z","image":{"id":"MTU3NTY3Nw","url":"https://cdn2.thecatapi.com/images/MTU3NTY3Nw.jpg"}}]
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'Pagination-Count': '2', 'Pagination-Page': '0', 'Pagination-Limit': '100', 'Access-Control-Expose-Headers': 'Pagination-Count, Pagination-Page, Pagination-Limit', 'X-Response-Time': '177ms', 'X-Cloud-Trace-Context': '5c52493225ac7e11370b4a731f25e367', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=EsL%2BhNI6LzXIaCtU3TxJW3XIvYFKqGmptcKux5Rea3R9s2J8D0GaFI5jl1yVUhGLfUeiVELDH415mHmzVefOFPtrvYzltZn0vnoNsE4PnKvi"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f20bc2dae32-AMS', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_add_to_favourites (call)
+Time: 2025-05-29 23:40:35.077447
+Request method: DELETE
+Request URL: https://api.thecatapi.com/v1/favourites/232534431
+
+Response code: 200
+Response code: {"message":"SUCCESS"}
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:33 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'X-Response-Time': '104ms', 'X-Cloud-Trace-Context': '1f876bfec90e7a8beec84d3ba3b4c1ac', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=IJkLGVTN3RB9M5AAvwavs7%2Bx0lHMWkq%2FyZN9BXzX%2Fsw8963be2MQigUNtxUMTaQwnLcik4z3f9OHZrV34mDcox2%2BZxz1mMStm0hMrvM3hQ4B"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f244bdbe31d-DME', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_add_to_favourites (call)
+Time: 2025-05-29 23:40:35.634250
+Request method: GET
+Request URL: https://api.thecatapi.com/v1/favourites
+
+Response code: 200
+Response code: [{"id":232534432,"user_id":"7lylsy","image_id":"MTU3NTY3Nw","sub_id":"Anka-user","created_at":"2025-05-29T16:40:31.000Z","image":{"id":"MTU3NTY3Nw","url":"https://cdn2.thecatapi.com/images/MTU3NTY3Nw.jpg"}}]
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:33 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'Pagination-Count': '1', 'Pagination-Page': '0', 'Pagination-Limit': '100', 'Access-Control-Expose-Headers': 'Pagination-Count, Pagination-Page, Pagination-Limit', 'X-Response-Time': '88ms', 'X-Cloud-Trace-Context': 'be45f39e188a6a9afffe81224f597032', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pUKht93aInHgjnOFdCviQ4XNo6mm2EoDtEHXfDjAO06FskK0L4vlNyGifWZfw1jGng%2BwW1436DIbLwDIHiWelJQEMHQ9f3mkfa2BsNfoww%3D%3D"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f282a3aef95-WAW', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_add_to_favourites (call)
+Time: 2025-05-29 23:40:36.250939
+Request method: DELETE
+Request URL: https://api.thecatapi.com/v1/favourites/232534432
+
+Response code: 200
+Response code: {"message":"SUCCESS"}
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:34 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'X-Response-Time': '95ms', 'X-Cloud-Trace-Context': '434dde97f48ba66f9ab932362fba4bfb', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2FibNp9pI2uzUDAfRGJsGUWYCEEMreuI5h7N%2B1OKrJSTYZ5diq7AgpbnrOtd%2FB0fUoThVsZhHzNvJs3cZry0ADPxXyFhbQvme3HWebXt%2FTw%3D%3D"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f2c1d8a3576-WAW', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_add_to_favourites (call)
+Time: 2025-05-29 23:40:36.840105
+Request method: GET
+Request URL: https://api.thecatapi.com/v1/favourites
+
+Response code: 200
+Response code: []
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:34 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'X-Response-Time': '87ms', 'X-Cloud-Trace-Context': '439404fbea28a9645e3f96070afe6b25', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=tgRg6SL8H2v%2F30oiKJrFvJzukw2FcuB6OLiJUnWyhhHT2zrctbjPopeElW0neoK5pjHIhV0tWOsu3xW53FlKL52YtcyWF5biYsxosjWy%2BkGd"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f300cbeae1c-AMS', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_vote_for_pictures (call)
+Time: 2025-05-29 23:40:37.463260
+Request method: GET
+Request URL: https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&order=RANDOM&page=0&limit=2
+
+Response code: 200
+Response code: [{"breeds":[],"id":"1vr","url":"https://cdn2.thecatapi.com/images/1vr.jpg","width":500,"height":334},{"breeds":[],"id":"6st","url":"https://cdn2.thecatapi.com/images/6st.jpg","width":1024,"height":684}]
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:35 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'Expires': 'Tue, 03 Jul 2001 06:00:00 GMT', 'Last-Modified': 'Thu May 29 2025 16:40:35 GMT+0000 (Coordinated Universal Time)', 'Cache-Control': 'post-check=0, pre-check=0', 'Authenticated': 'true', 'X-Response-Time': '218ms', 'X-Cloud-Trace-Context': '13a5a9cb3a89fcdf198f1c85cfe2969f', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=zSJa2Qu9l%2FLDR6TXPGk8DX1MrRJUAu4QWYhNlCPMhGI2ZIIdTxAu9FRE3fMWbfbot6p%2Fl%2BgbhxdPnqRugLNLMELHwYYYcMZuydgqBYvFnD2%2F"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f3428bfc06f-WAW', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_vote_for_pictures (call)
+Time: 2025-05-29 23:40:38.305519
+Request method: POST
+Request URL: https://api.thecatapi.com/v1/votes
+
+Response code: 201
+Response code: {"message":"SUCCESS","id":1283919,"image_id":"1vr","sub_id":"Anka-user","value":1}
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:36 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '82', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'X-Response-Time': '99ms', 'X-Cloud-Trace-Context': 'fba0e09f414b30283b91cb8233308178', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Lbgch0%2F9Z%2FtbBBg%2F0PqZc%2FKyTF4b%2Fvip0BoPsbqRaYyFGnjr7iWPVSgf5i6kWfdEFpc%2Fv3EwBieom7iJO%2FoLkyKoq%2Fy4uIgDkSDe3nF1gnaH"}]}', 'CF-RAY': '94776f3c9df75925-AMS', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_vote_for_pictures (call)
+Time: 2025-05-29 23:40:39.461246
+Request method: POST
+Request URL: https://api.thecatapi.com/v1/votes
+
+Response code: 201
+Response code: {"message":"SUCCESS","id":1283920,"image_id":"6st","sub_id":"Anka-user","value":1}
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:37 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '82', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'X-Response-Time': '96ms', 'X-Cloud-Trace-Context': 'c8ce220c7cd55767a26268d34c82eb4c', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YAOiJ8xulGHw9LVSqtbdVRr%2F5Hv6ERbsd%2FQlD2DKpWInATEpukeuC8gLhGS7UZp27TX0Dzqw16%2BhniymfFxAWCjrXjDl0iVoq1aqL%2FyfTZ7j"}]}', 'CF-RAY': '94776f40b976fece-AMS', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_vote_for_pictures (call)
+Time: 2025-05-29 23:40:40.122035
+Request method: GET
+Request URL: https://api.thecatapi.com/v1/votes
+
+Response code: 200
+Response code: [{"id":1283919,"image_id":"1vr","sub_id":"Anka-user","created_at":"2025-05-29T16:40:36.000Z","value":1,"country_code":null,"image":{"id":"1vr","url":"https://cdn2.thecatapi.com/images/1vr.jpg"}},{"id":1283920,"image_id":"6st","sub_id":"Anka-user","created_at":"2025-05-29T16:40:37.000Z","value":1,"country_code":null,"image":{"id":"6st","url":"https://cdn2.thecatapi.com/images/6st.jpg"}}]
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:38 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'Pagination-Count': '2', 'Pagination-Page': '0', 'Pagination-Limit': '100', 'Access-Control-Expose-Headers': 'Pagination-Count, Pagination-Page, Pagination-Limit', 'X-Response-Time': '172ms', 'X-Cloud-Trace-Context': '31d85313f845b352d9a3381f224f3bcd', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=5gm0kaaAT7rHrQOpSGVyO3JhsUdcXHppMfv83qgKsTg81P0gy387Q%2BZNSZm%2Bgm%2B8P70CXxxElfsnrZFpHnv%2BhXN9zU%2BBzSASrK%2FbvAmkYZbe"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f43c869e48f-DME', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_vote_for_pictures (call)
+Time: 2025-05-29 23:40:40.758824
+Request method: DELETE
+Request URL: https://api.thecatapi.com/v1/votes/1283919
+
+Response code: 200
+Response code: {"message":"SUCCESS"}
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:38 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'X-Response-Time': '98ms', 'X-Cloud-Trace-Context': '9aa115a28c2f3ca68d280a93c62bf32f;o=1', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=K%2Fkhz%2FCfswM%2F5kQOyP2wSajnS8TiB5pFHrIisQXT8ecqlrTpMyBC%2BbVsqhxZyy1QSGrG607Zy7FsPGRG%2BtvABrPPYlc6fvKWFrR22QALsg%3D%3D"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f4839acecbe-WAW', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_vote_for_pictures (call)
+Time: 2025-05-29 23:40:41.319037
+Request method: GET
+Request URL: https://api.thecatapi.com/v1/votes
+
+Response code: 200
+Response code: [{"id":1283920,"image_id":"6st","sub_id":"Anka-user","created_at":"2025-05-29T16:40:37.000Z","value":1,"country_code":null,"image":{"id":"6st","url":"https://cdn2.thecatapi.com/images/6st.jpg"}}]
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:39 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'Pagination-Count': '1', 'Pagination-Page': '0', 'Pagination-Limit': '100', 'Access-Control-Expose-Headers': 'Pagination-Count, Pagination-Page, Pagination-Limit', 'X-Response-Time': '84ms', 'X-Cloud-Trace-Context': '61b188d7e6ddc795eba8576e6dfffae1', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=0CWCwYgETxdgDec1oILCuClc%2FzmYcUEyzdyWsaXbOneLY5DfRgTBPAn3%2FB0QMaxfVhF8nUMY%2Bb4MjhKxnclCc7PyGFmjUzyw4r%2F4gxTLqQ%3D%3D"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f4b3da89d3a-DME', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_vote_for_pictures (call)
+Time: 2025-05-29 23:40:41.849355
+Request method: DELETE
+Request URL: https://api.thecatapi.com/v1/votes/1283920
+
+Response code: 200
+Response code: {"message":"SUCCESS"}
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:39 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'X-Response-Time': '93ms', 'X-Cloud-Trace-Context': 'fe7111cd06c5523cb0db42b91f32fdb6', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=c4%2F1s%2FkDEuL1t3lgu4ZLPdtS5bUF%2BWD1dS6LN2SmR2vvzYaJ0YvRq1r2IIfZLa2RBamQzYrhQ4uqM%2B6Fy0L2nIjQX4e5rFS%2BNNMhGE%2B9zd6D"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f4f29558239-AMS', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_CatAPI.py::TestCatAPI::test_vote_for_pictures (call)
+Time: 2025-05-29 23:40:42.421569
+Request method: GET
+Request URL: https://api.thecatapi.com/v1/votes
+
+Response code: 200
+Response code: []
+Response headers: {'Date': 'Thu, 29 May 2025 16:40:40 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Vary': 'Origin', 'Pagination-Count': '0', 'Pagination-Page': '0', 'Pagination-Limit': '100', 'Access-Control-Expose-Headers': 'Pagination-Count, Pagination-Page, Pagination-Limit', 'X-Response-Time': '87ms', 'X-Cloud-Trace-Context': '39105539f692293deadc727eb06a0758', 'Server': 'cloudflare', 'Cf-Cache-Status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rqEf3kqIsSeCZRNFv%2FBuSDOIj0GxAsKyWs9LJTH1UmXpKSP4j9AfB%2F91lTGGB2GYf%2BbNVs3IDNFPVm%2BYxnNlKsKSBhJYFOsUqOgMWiOnUly%2F"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': '94776f54bac76d99-AMS', 'alt-svc': 'h3=":443"; ma=86400'}
+Response cookies: {}
+
+-----

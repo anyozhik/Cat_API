@@ -1,0 +1,23 @@
+Method post for uploading a photo
+https://api.thecatapi.com/v1/images/upload
+{'id': '_tpFYEfTs', 'url': 'https://cdn2.thecatapi.com/images/_tpFYEfTs.jpg', 'width': 1040, 'height': 780, 'original_filename': 'IMG_1.jpeg', 'pending': 0, 'approved': 1}
+201
+Successfully! Status code is 201
+['id', 'url', 'width', 'height', 'original_filename', 'pending', 'approved']
+All fields are presented
+Method get after post for the photo
+https://api.thecatapi.com/v1/images/_tpFYEfTs
+{'id': '_tpFYEfTs', 'url': 'https://cdn2.thecatapi.com/images/_tpFYEfTs.jpg', 'width': 1040, 'height': 780, 'sub_id': None}
+200
+Successfully! Status code is 200
+['id', 'url', 'width', 'height', 'sub_id']
+All fields are presented
+Method delete for the photo
+https://api.thecatapi.com/v1/images/_tpFYEfTs
+204
+Successfully! Status code is 204
+Method get after delete
+https://api.thecatapi.com/v1/images/_tpFYEfTs
+400
+Successfully! Status code is 400
+Testing of uploading and deleting a new photo has finished successfully.

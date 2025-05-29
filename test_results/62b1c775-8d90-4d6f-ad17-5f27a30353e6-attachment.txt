@@ -1,0 +1,45 @@
+Method get for a search of specific images
+https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&order=RANDOM&page=0&limit=2
+[{'breeds': [], 'categories': [{'id': 14, 'name': 'sinks'}], 'id': '8os', 'url': 'https://cdn2.thecatapi.com/images/8os.jpg', 'width': 2592, 'height': 1552}, {'breeds': [], 'id': 'MTU3NTY3Nw', 'url': 'https://cdn2.thecatapi.com/images/MTU3NTY3Nw.jpg', 'width': 580, 'height': 773}]
+200
+Successfully! Status code is 200
+Method for adding pictures to favourites
+https://api.thecatapi.com/v1/favourites
+{'message': 'SUCCESS', 'id': 232534431}
+200
+Successfully! Status code is 200
+['message', 'id']
+All fields are presented
+https://api.thecatapi.com/v1/favourites
+{'message': 'SUCCESS', 'id': 232534432}
+200
+Successfully! Status code is 200
+['message', 'id']
+All fields are presented
+Method get for checking favourites
+https://api.thecatapi.com/v1/favourites
+[{'id': 232534431, 'user_id': '7lylsy', 'image_id': '8os', 'sub_id': 'Anka-user', 'created_at': '2025-05-29T16:40:30.000Z', 'image': {'id': '8os', 'url': 'https://cdn2.thecatapi.com/images/8os.jpg'}}, {'id': 232534432, 'user_id': '7lylsy', 'image_id': 'MTU3NTY3Nw', 'sub_id': 'Anka-user', 'created_at': '2025-05-29T16:40:31.000Z', 'image': {'id': 'MTU3NTY3Nw', 'url': 'https://cdn2.thecatapi.com/images/MTU3NTY3Nw.jpg'}}]
+200
+Successfully! Status code is 200
+Length of response is correct!
+Method delete for the first favourite picture
+https://api.thecatapi.com/v1/favourites/232534431
+200
+Successfully! Status code is 200
+Method get for checking favourites after the first delete
+https://api.thecatapi.com/v1/favourites
+[{'id': 232534432, 'user_id': '7lylsy', 'image_id': 'MTU3NTY3Nw', 'sub_id': 'Anka-user', 'created_at': '2025-05-29T16:40:31.000Z', 'image': {'id': 'MTU3NTY3Nw', 'url': 'https://cdn2.thecatapi.com/images/MTU3NTY3Nw.jpg'}}]
+200
+Successfully! Status code is 200
+Length of response is correct!
+Method delete for the second favourite picture
+https://api.thecatapi.com/v1/favourites/232534432
+200
+Successfully! Status code is 200
+Method get for checking favourites after the second delete
+https://api.thecatapi.com/v1/favourites
+[]
+200
+Successfully! Status code is 200
+Length of response is correct!
+Testing of adding pictures to favourites and removing them has finished successfully.
